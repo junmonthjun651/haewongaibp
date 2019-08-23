@@ -19,7 +19,6 @@ async def on_message(message):
         await message.channel.send("권한발급완료했습니다.")
         be = discord.utils.get(message.guild.roles, name="비회원")
         await be.remove_roles(be)
-    
 
 
 access_token = os.environ["BOT_TOKEN"]
