@@ -6,7 +6,6 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("hi")
     await client.change_presence(status=discord.Status.idle, activity=discord.Game(name="{} SERVER | {} USER". format(len(client.guilds), len(client.users))))
 
 
