@@ -17,6 +17,8 @@ async def on_message(message):
         haewonga = discord.utils.get(message.guild.roles, name="회원")
         await haewon.add_roles(haewonga)
         await message.channel.send("권한발급완료")
+        be = discord.utils.get(message.guild.roles, name="비회원")
+        await author.remove_roles(be)
     
 
 
